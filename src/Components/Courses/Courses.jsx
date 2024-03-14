@@ -6,7 +6,7 @@ const Courses = ({handleAddToBookmarks}) => {
    const [courses, setCourses] = useState([])
 
    useEffect(() => {
-    fetch("courses.json")
+    fetch("/courses.json")
     .then(res => res.json())
     .then(data => setCourses(data))
    }, [])
